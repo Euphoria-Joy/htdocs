@@ -34,9 +34,9 @@
 	<div id="content">
 		<div id="nav">
 			<a href="#a" style="color: #fff"><div style="background: #512DA8">Navigation</div></a>
-			<a href="#b"><div>Test 1</div></a>
-			<a href="#c"><div>Test 2</div></a>
-			<a href="#d"><div>Test 3</div></a>
+			<a href="index.php"><div>Log out</div></a>
+			<a href="home.php"><div>Home</div></a>
+			<a href="profile.php"><div>Profile</div></a>
 			<a href="#a"><div>Main</div></a>
 			<a href="#b"><div>Test 1</div></a>
 			<a href="#c"><div>Test 2</div></a>
@@ -62,6 +62,12 @@
 <div class="card">
 					<div><input type="text" name="searchname" placeholder="Search" /></div>
 					<div><input type="submit" name="search" value="search" /></div> 
+<div><select>
+<option>Character info</option>
+<option>Inventory</option>
+<option>Items</option>
+</select>
+</div>
 				</form>
 	<br/>
 	<br/>
