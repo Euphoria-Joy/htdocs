@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<title>Rens MD</title>
+	<title>Informatica</title>
 	<link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body id="draw">
@@ -34,9 +34,9 @@
 	<div id="content">
 		<div id="nav">
 			<a href="#a" style="color: #fff"><div style="background: #512DA8">Navigation</div></a>
-			<a href="index.php"><div>Log out</div></a>
-			<a href="home.php"><div>Home</div></a>
-			<a href="profile.php"><div>Profile</div></a>
+			<a href="#b"><div>Test 1</div></a>
+			<a href="#c"><div>Test 2</div></a>
+			<a href="#d"><div>Test 3</div></a>
 			<a href="#a"><div>Main</div></a>
 			<a href="#b"><div>Test 1</div></a>
 			<a href="#c"><div>Test 2</div></a>
@@ -50,32 +50,26 @@
 			<div class="column">			
 			<div class="card">
 				<form action="Index.php" method="post">
-					<div><input type="text" name="name" placeholder="Username" /></div>
-					<div><input type="password" name="pass" placeholder="Password" /></div>
+					<div><input type="text" name="Username" placeholder="Username" /></div>
+					<div><input type="password" name="Password" placeholder="Password" /></div>
 					<div><textarea placeholder="Comment"></textarea></div>
 					<div><select><option>Test</option><option>Kek</option></select></div>
-					<div><input type="submit" value="Submit" /><a href="home.php" class="button"><div>Cancel</div></a></div>
+					<div><input type="submit" name ="Login" value="Login" /><a href="home.php" class="button"><div>Cancel</div></a></div>
 				</form>
 				<div class="clearfix"></div>
 <form action="Index.php" method="post">
 </div>
 <div class="card">
-					<div><input type="text" name="name" placeholder="Search" /></div>
+					<div><input type="text" name="searchname" placeholder="Search" /></div>
 					<div><input type="submit" name="search" value="search" /></div> 
 				</form>
 	<br/>
 	<br/>
 <?php
-if (isset($_POST['search'])){
-$connect = mysqli_connect("localhost","root","fgtdodo");
-mysqli_select_db($connect, "informatica site");
-$result = mysqli_query($connect, 'SELECT * FROM kar');
-while($karRow = mysqli_fetch_assoc($result))
- {
-  echo '<div class="card">',  $karRow['Account'], $karRow['Karaktertype'], $karRow['Displayname'], '</div>';
- } 
-mysqli_close($connect);
-}
+
+include('Search.php');
+include('Inloggen.php');
+
 ?>
 
 
@@ -83,7 +77,7 @@ mysqli_close($connect);
 
 			</div>
 
-			<div class="card">kekz<br/><br/>kekz<br/><br/>kekz<br/><br/>kekz<br/><br/>kekz
+			<div class="card"><div class="card">Updates</div><br/><br/>There haven't been any updates yet.
 			</div>
 			
 			<div class="card">kekzkekz<br/><br/>kekz<br/><br/>kekz<br/><br/>kekz
@@ -104,7 +98,7 @@ mysqli_close($connect);
 			</div>
 			</div>
 
-			<div class="card" id="clearfix" style="text-align: center">By Amir Zaidi
+			<div class="card" id="clearfix" style="text-align: center">Footnote
 			</div>
 		</div>
 	</div>

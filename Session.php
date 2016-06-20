@@ -12,7 +12,7 @@ if(!isset($login_session)){
 	mysql_close($connection);
 	header('Location: index.php');
 }
-$connection2 = mysqli_connect("localhost", "root", "fgtdodo", "informatica site");
+$connection = mysqli_connect("localhost", "root", "fgtdodo", "informatica site");
 $search_result = $_SESSION['search'];
 $search_sql = mysqli_query($connection, "select Account from kar where Account ='" . $search ."'");
 $row = mysqli_fetch_assoc($search_sql);

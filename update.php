@@ -1,7 +1,7 @@
 <?php
+$connection = mysqli_connect ('localhost', 'root', 'fgtdodo', 'informatica site');
 if(isset($_POST['change'])){
 $Uold = $_SESSION['login_user']
-$connection = mysqli_connect('localhost', 'root', 'fgtdodo', 'informatica site');
 $Uchange = "UPDATE accountgegevens SET Gebruikersnaam=$_POST['Username'] WHERE Gebruikersnaam=$Uold";
 $Pchange = "UPDATE accountgegevens SET Wachtwoord=$_POST['Password'] WHERE Gebruikersnaam=$Uold";
 $Echange = "UPDATE extrainfo SET Email=$_POST['Email'] WHERE Gebruikersnaam=$Uold";
