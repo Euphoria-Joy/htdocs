@@ -3,7 +3,7 @@ if(empty($_POST['searchname'])){
 		echo "Enter something";
 }
 if (isset($_POST['searchname'])){
-	$connect = mysqli_connect("localhost","root","fgtdodo","informatica site");	
+	$connect = mysqli_connect("localhost","root","usbw","informatica");	
 
 	if ($_POST['searchoption'] == 'a'){
 		$search = $_POST['searchname'];

@@ -9,7 +9,7 @@ $error = "Username or Password is invalid";
 		{
 	$username = $_POST['Username'];
 	$password = $_POST['Password'];
-	$connection = mysqli_connect('localhost', 'root', 'fgtdodo', 'informatica site');
+	$connection = mysqli_connect('localhost', 'root', 'usbw', 'informatica');
 	
 	$username = mysqli_real_escape_string($connection, $username);
 	$password = mysqli_real_escape_string($connection, $password);

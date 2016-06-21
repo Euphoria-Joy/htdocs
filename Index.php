@@ -57,22 +57,21 @@
 					<div><input type="submit" name ="Login" value="Login" /><a href="home.php" class="button"><div>Cancel</div></a></div>
 				</form>
 				<div class="clearfix"></div>
-<form action="Index.php" method="post">
-</div>
-<div class="card">
-					<div><input type="text" name="searchname" placeholder="Search" /></div>
-				 
-<div><select name="searchoption">
-<option disabled selected>Choose an option</option>
-<option value="a">Character info</option>
-<option value="b">Inventory</option>
-<option value "c">Items</option>
-</select>
-</div>
-<div><input type="submit" name="search" value="Search" /></div>
-				</form>
-	<br/>
-	<br/>
+	<form action="Index.php" method="post">
+		<div><input type="text" name="searchname" placeholder="Search" /></div>
+		<div>
+			<select name="searchoption">
+				<option disabled selected>Choose an option</option>
+				<option value="a">Character info</option>
+				<option value="b">Inventory</option>
+				<option value "c">Items</option>
+			</select>
+		</div>
+	
+		<div><input type="submit" value="Search" /></div>
+	</form>
+	<div class="clearfix"></div>
+
 <?php
 
 include('Search.php');
@@ -88,12 +87,62 @@ include('Inloggen.php');
 			<div class="card"><center>Updates</center><br/><br/>There haven't been any updates yet.
 			</div>
 			
-			<div class="card">kekzkekz<br/><br/>kekz<br/><br/>kekz<br/><br/>kekz
-			</div>
+<div class="card">
+	<center>Character info</center>
+	<form action="Index.php" method="post">
+		<div>
+			<input type="text" name="searchname" placeholder="Search" />
+		</div>
+		<div>
+			<select name="searchdisplay">
+				<option disabled selected>Choose a Displayoption</option>
+				<option value="a">Character info</option>
+				<option value="b">Inventory</option>
+				<option value "c">Items</option>
+			</select>
+		</div>
+		<div><input type="submit" value="Search" /></div>
+	</form>
+</div>
 
-			<div class="card">kekz<br/><br/>kekz<br/><br/>kekz<br/><br/>kekz<br/><br/>kekz
-			</div>
-			</div>
+			
+<div class="card">
+	<center>Inventory</center>
+	<form action="Index.php" method="post">
+		<div>
+			<input type="text" name="searchname" placeholder="Search" />
+		</div>
+		<div>
+			<select name="searchdisplay">
+				<option disabled selected>Choose a Displayoption</option>
+				<option value="a">Character info</option>
+				<option value="b">Inventory</option>
+				<option value "c">Items</option>
+			</select>
+		</div>
+		<div><input type="submit" value="Search" /></div>
+	</form>
+</div>
+
+<div class="card">
+	<center>Items</center>
+	<form action="Index.php" method="post">
+		<div>
+			<input type="text" name="searchname" placeholder="Search" />
+		</div>
+		<div>
+			<select name="searchdisplay">
+				<option disabled selected>Choose a Displayoption</option>
+				<option value="a">Character info</option>
+				<option value="b">Inventory</option>
+				<option value "c">Items</option>
+			</select>
+		</div>
+		<div><input type="submit" value="Search" /></div>
+	</form>
+</div>
+
+</div>
 
 			<div class="column">
 			<div class="card">kekz<br/><br/>kekz<br/><br/>kekz<br/><br/>kekz<br/><br/>kekz
