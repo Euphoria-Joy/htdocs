@@ -57,11 +57,19 @@
 					<div><input type="submit" name ="Login" value="Login" /><a href="home.php" class="button"><div>Cancel</div></a></div>
 				</form>
 				<div class="clearfix"></div>
+<?php
+
+include('Inloggen.php');
+
+?>
+		</div>
+	
+<div class="card">
 	<form action="Index.php" method="post">
 		<div><input type="text" name="searchname" placeholder="Search" /></div>
 		<div>
 			<select name="searchoption">
-				<option disabled selected>Choose an option</option>
+				<option disabled selected value="x">Choose an option</option>
 				<option value="a">Character info</option>
 				<option value="b">Inventory</option>
 				<option value "c">Items</option>
@@ -71,82 +79,68 @@
 		<div><input type="submit" value="Search" /></div>
 	</form>
 	<div class="clearfix"></div>
-
 <?php
 
 include('Search.php');
-include('Inloggen.php');
 
 ?>
+</div>
 
-
-
-
-			</div>
-
-			<div class="card"><center>Updates</center><br/><br/>There haven't been any updates yet.
-			</div>
 			
 <div class="card">
 	<center>Character info</center>
 	<form action="Index.php" method="post">
 		<div>
-			<input type="text" name="searchname" placeholder="Search" />
+			<input type="text" name="searchname1" placeholder="Search" />
 		</div>
 		<div>
-			<select name="searchdisplay">
-				<option disabled selected>Choose a Displayoption</option>
-				<option value="a">Character info</option>
-				<option value="b">Inventory</option>
-				<option value "c">Items</option>
+			<select name="searchtas">
+				<option disabled selected>Choose a Display option</option>
+				<option value="a">Levens</option>
+				<option value="b">Gold</option>
+				<option value "c">Kaarten</option>
 			</select>
 		</div>
 		<div><input type="submit" value="Search" /></div>
 	</form>
-</div>
-
-			
-<div class="card">
-	<center>Inventory</center>
-	<form action="Index.php" method="post">
-		<div>
-			<input type="text" name="searchname" placeholder="Search" />
-		</div>
-		<div>
-			<select name="searchdisplay">
-				<option disabled selected>Choose a Displayoption</option>
-				<option value="a">Character info</option>
-				<option value="b">Inventory</option>
-				<option value "c">Items</option>
-			</select>
-		</div>
-		<div><input type="submit" value="Search" /></div>
-	</form>
+	<div class="clearfix"></div>
+<?php
+if(empty($_POST['searchname1'])){
+		echo "Enter something";
+}
+?>
 </div>
 
 <div class="card">
 	<center>Items</center>
 	<form action="Index.php" method="post">
 		<div>
-			<input type="text" name="searchname" placeholder="Search" />
+			<input type="text" name="searchname2" placeholder="Search" />
 		</div>
 		<div>
-			<select name="searchdisplay">
-				<option disabled selected>Choose a Displayoption</option>
-				<option value="a">Character info</option>
-				<option value="b">Inventory</option>
-				<option value "c">Items</option>
+			<select name="searchkar">
+				<option disabled selected>Choose a Display option</option>
+				<option value="a">Karaktertype</option>
+				<option value="b">Displayname</option>
 			</select>
 		</div>
 		<div><input type="submit" value="Search" /></div>
 	</form>
+	<div class="clearfix"></div>
+<?php
+if(empty($_POST['searchname1'])){
+		echo "Enter something";
+}
+?>
+
 </div>
 
 </div>
 
 			<div class="column">
-			<div class="card">kekz<br/><br/>kekz<br/><br/>kekz<br/><br/>kekz<br/><br/>kekz
-			</div>
+<div class="card">
+	<center>Updates</center><br/><br/>There haven't been any updates yet.
+</div>
 			
 			<div class="card">kekz<br/><br/>kekz<br/><br/>kekz<br/><br/>kekz<br/><br/>kekz
 			</div>
