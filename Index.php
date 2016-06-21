@@ -61,13 +61,15 @@
 </div>
 <div class="card">
 					<div><input type="text" name="searchname" placeholder="Search" /></div>
-					<div><input type="submit" name="search" value="search" /></div> 
-<div><select>
-<option>Character info</option>
-<option>Inventory</option>
-<option>Items</option>
+				 
+<div><select name="searchoption">
+<option disabled selected>Choose an option</option>
+<option value="a">Character info</option>
+<option value="b">Inventory</option>
+<option value "c">Items</option>
 </select>
 </div>
+<div><input type="submit" name="search" value="Search" /></div>
 				</form>
 	<br/>
 	<br/>
@@ -83,7 +85,7 @@ include('Inloggen.php');
 
 			</div>
 
-			<div class="card"><div class="card">Updates</div><br/><br/>There haven't been any updates yet.
+			<div class="card"><center>Updates</center><br/><br/>There haven't been any updates yet.
 			</div>
 			
 			<div class="card">kekzkekz<br/><br/>kekz<br/><br/>kekz<br/><br/>kekz
