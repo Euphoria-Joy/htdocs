@@ -72,7 +72,7 @@ include('Inloggen.php');
 				<option disabled selected value="x">Choose an option</option>
 				<option value="a">Character info</option>
 				<option value="b">Inventory</option>
-				<option value "c">Items</option>
+				<option value="c">Items</option>
 			</select>
 		</div>
 	
@@ -91,23 +91,21 @@ include('Search.php');
 	<center>Character info</center>
 	<form action="Index.php" method="post">
 		<div>
-			<input type="text" name="searchname1" placeholder="Search" />
+			<input type="text" name="searchname2" placeholder="Displayname" />
 		</div>
 		<div>
 			<select name="searchtas">
-				<option disabled selected>Choose a Display option</option>
+				<option disabled selected value="x">Choose a Display option</option>
 				<option value="a">Levens</option>
 				<option value="b">Gold</option>
-				<option value "c">Kaarten</option>
+				<option value="c">Kaarten</option>
 			</select>
 		</div>
 		<div><input type="submit" value="Search" /></div>
 	</form>
 	<div class="clearfix"></div>
 <?php
-if(empty($_POST['searchname1'])){
-		echo "Enter something";
-}
+include('search2.php');
 ?>
 </div>
 
@@ -115,11 +113,11 @@ if(empty($_POST['searchname1'])){
 	<center>Items</center>
 	<form action="Index.php" method="post">
 		<div>
-			<input type="text" name="searchname2" placeholder="Search" />
+			<input type="text" name="searchname1" placeholder="Displayname" />
 		</div>
 		<div>
 			<select name="searchkar">
-				<option disabled selected>Choose a Display option</option>
+				<option disabled selected value="x">Choose a Display option</option>
 				<option value="a">Karaktertype</option>
 				<option value="b">Displayname</option>
 			</select>
@@ -128,9 +126,7 @@ if(empty($_POST['searchname1'])){
 	</form>
 	<div class="clearfix"></div>
 <?php
-if(empty($_POST['searchname1'])){
-		echo "Enter something";
-}
+include('search1.php');
 ?>
 
 </div>
